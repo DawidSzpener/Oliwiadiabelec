@@ -1,0 +1,192 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+.Homepage {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgb(250, 247, 233);
+  background-repeat: no-repeat;
+  background-size: cover;
+  -webkit-animation: fade-out 1s ease-out both;
+  animation: fade-out 1s ease-out both;
+  animation-delay: 5s;
+  -webkit-animation-delay: 5s;
+
+  &__face {
+    cursor: pointer;
+    margin: 2% 0 0 0%;
+    display: inline-block;
+    width: 16%;
+    height: 45%;
+    background-image: url('../../assets/images/face.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    -webkit-animation: slide-in-bck-center 0.7s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+    animation: slide-in-bck-center 0.7s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+    animation-delay: 2.7s;
+    -webkit-animation-delay: 2.7s;
+  }
+
+  &__name {
+    font-size: 8vw;
+    padding: 0 25% 0 25%;
+    margin: 2% 0 0 0;
+  }
+
+  &__title {
+    font-size: 3.5vw;
+    padding: 0 10% 0 10%;
+    margin: 5% 0 0 0;
+  }
+}
+
+h1 {
+  letter-spacing: 12px;
+  font-family: 'Wallpoet', cursive;
+  text-align: center;
+  font-weight: 600;
+
+  & span span {
+    position: relative;
+    animation: move-text-color 0.75s forwards;
+    bottom: -1em;
+    opacity: 0;
+    word-wrap: normal;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .Homepage__name {
+    font-size: 14vw;
+    padding: 0 0 0 1%;
+    width: 100%;
+  }
+  .Homepage__title {
+    font-size: 8vw;
+    padding: 0 10% 10% 12%;
+    margin: 5% 0 0 0;
+  }
+  .Homepage__face {
+    margin: -3% 0 0 3%;
+    width: 80%;
+    height: 70%;
+  }
+}
+
+@media screen and (max-width: 650px) and (min-width: 451px) {
+  .Homepage__name {
+    font-size: 13vw;
+    padding: 0 0 0 1%;
+    width: 100%;
+  }
+  .Homepage__title {
+    font-size: 8vw;
+    padding: 0 10% 10% 12%;
+    margin: 5% 0 0 0;
+  }
+  .Homepage__face {
+    margin: -3% 2% 0 0;
+    width: 40%;
+    height: 70%;
+  }
+}
+
+@media screen and (max-width: 1000px) and (min-width: 651px) {
+  .Homepage__name {
+    font-size: 9vw;
+    padding: 0 0 0 1%;
+    width: 100%;
+  }
+  .Homepage__title {
+    font-size: 5vw;
+    padding: 0 10% 10% 12%;
+    margin: 5% 0 0 0;
+  }
+  .Homepage__face {
+    margin: -7% 2% 0 0;
+    width: 36%;
+    height: 70%;
+  }
+}
+
+@media screen and (max-width: 1000px) and (min-width: 801px) {
+  .Homepage__name {
+    font-size: 7vw;
+    padding: 0 0 0 1%;
+    width: 100%;
+  }
+  .Homepage__title {
+    font-size: 4vw;
+    padding: 0 10% 10% 12%;
+    margin: 5% 0 0 0;
+  }
+  .Homepage__face {
+    margin: -7% 2% 0 0;
+    width: 30%;
+    height: 70%;
+  }
+}
+
+@keyframes move-text-color {
+  0% {
+    bottom: -0.2em;
+    opacity: 1;
+    color: #3E5C76;
+  }
+  
+  50% {
+    bottom: 0.2em;
+    color: #EC058E;
+  }
+
+  100% {
+    bottom: 0;
+    opacity: 1;
+    color: #cb3126;
+  }
+}
+
+@-webkit-keyframes slide-in-bck-center {
+  0% {
+    -webkit-transform: translateZ(600px);
+    transform: translateZ(600px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+    opacity: 1;
+  }
+}
+@keyframes slide-in-bck-center {
+  0% {
+    -webkit-transform: translateZ(600px);
+    transform: translateZ(600px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes fade-out {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes fade-out {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}

@@ -1,0 +1,128 @@
+.ProjectViewContainer {
+  z-index: 105;
+  margin: 20% 0 20% 5%;
+  width: 90%;
+  height: 72%;
+  background-color: rgb(250, 247, 233);
+  background-repeat: no-repeat;
+  background-size: cover; 
+  align-content: center;
+  box-sizing: border-box;
+}
+
+.LeftSide {
+  margin: 1%;
+  float: left;
+  width: 48%;
+  height: 98%;
+
+  &__Technology {
+    margin: auto;
+    text-align: center;
+    font-family: 'Piedra', cursive;
+    font-weight: 100;
+    letter-spacing: 0.4px;
+    color: grey;
+    padding-top: 5%;
+    font-size: 1.5vw;
+    width: 70%;
+  }
+
+  &__Title {
+    margin: 10% 0 0 0;
+    letter-spacing: 0px;
+    font-family: 'Wallpoet', cursive;
+    text-align: center;
+    font-weight: 1000;
+    font-size: 3.8vw;
+  }
+
+  &__Description {
+    text-transform: uppercase;
+    margin: 0%;
+    text-align: center;
+    font-family: 'Piedra', cursive;
+    font-weight: 100;
+    letter-spacing: 0px;
+    height: 20%;
+    padding: 5%;
+    font-size: 1.7vw;
+  }
+
+  &__Github {
+    float: left;
+    width: 50%;
+    height: 10%;
+  }
+
+  &__Website {
+    float: left;
+    width: 50%;
+    height: 10%;
+  }
+}
+
+.RightSide {
+  margin: 1%;
+  float: left;
+  width: 48%;
+  height: 98%;
+
+  &__Gif {
+    margin: 3% 0 0 4%;
+    height: 90%;
+    width: 90%; 
+    display: inline-block;
+    align-content: center;
+    border: 2px #eee;
+    box-shadow: 0 0 2px 4px black;
+    border-radius: 6px;
+    box-sizing: border-box;
+
+    & img {
+      height: 100%;
+      width: 100%; 
+    }
+  }
+}
+
+@media (min-width: 1400px) {
+  .ProjectViewContainer {
+    margin: 13% 0 13% 5%;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .RightSide {
+    margin: 10% 0 0 0;
+    width: 97%;
+    height: 40%;
+
+    &__Gif {
+      margin: 15% 0 0 4%;
+      height: 60%;
+      width: 60%; 
+    }
+  }
+  .LeftSide {
+    margin: 1%;
+    float: left;
+    width: 100%;
+    height: 40%;
+
+    &__Technology {
+      font-size: 8vw;
+      margin: 7% 0 0 0;
+    }
+
+    &__Title {
+      font-size: 8vw;
+      margin: 7% 0 0 0;
+    }
+
+    &__Description {
+      font-size: 4vw;
+      margin: 0% 0 8% 0;
+    }
+  }
+}
